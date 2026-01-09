@@ -1,0 +1,66 @@
+/* 桌面版 (>1024px) */
+@media (max-width: 1024px) {
+    :root {
+        --font-size-base: 13px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 平板版 (768px - 1024px) */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 13px;
+    }
+
+    .container {
+        padding: 0 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart {
+        height: 300px !important;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+}
+
+/* 手機版 (<768px) */
+@media (max-width: 576px) {
+    :root {
+        --font-size-base: 12px;
+        --spacing-md: 12px;
+    }
+
+    .container {
+        padding: 0 8px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header {
+        padding: 12px 8px;
+    }
+
+    .card {
+        padding: 12px;
+    }
+
+    .button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}

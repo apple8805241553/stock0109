@@ -1,0 +1,148 @@
+.stock-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.card-header {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-md);
+}
+
+.stock-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.stock-info {
+    flex: 1;
+}
+
+.stock-symbol {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 4px 0;
+    color: var(--text-color);
+}
+
+.stock-name {
+    font-size: 12px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+.price-change {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.price-change.positive {
+    color: var(--success-color);
+}
+
+.price-change.negative {
+    color: var(--danger-color);
+}
+
+.card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    padding-bottom: var(--spacing-md);
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-price {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.price-change-amount {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.percent-section {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.percent-badge {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    background-color: var(--secondary-color);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.stat-label {
+    font-size: 11px;
+    color: var(--text-light);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.stat-value {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.card-footer {
+    display: flex;
+    gap: var(--spacing-sm);
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--border-color);
+}
+
+.button {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.chart-section {
+    margin-top: var(--spacing-lg);
+    padding-top: var(--spacing-lg);
+    border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+    .stock-symbol {
+        font-size: 18px;
+    }
+
+    .current-price {
+        font-size: 20px;
+    }
+
+    .stats-section {
+        grid-template-columns: 1fr;
+    }
+}
